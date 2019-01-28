@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
 import Movie from './Movies/Movie';
+import MovieCard from './Movies/MovieCard'
 
 export default class App extends Component {
   constructor() {
@@ -29,6 +30,7 @@ export default class App extends Component {
         // component={Movie} 
         render={props => <Movie {...props} addToSavedList={this.addToSavedList}/>}
         />
+        
       </div>
     );
   }
