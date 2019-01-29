@@ -40,7 +40,6 @@ export default class App extends Component {
         // component={Movie} 
         render={props => <Movie {...props} addToSavedList={this.addToSavedList}/>}
         />
-        
       </div>
     );
   }
