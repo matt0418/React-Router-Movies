@@ -90,3 +90,7 @@ a {
   margin-left: 42%;
   cursor: pointer;
 }
+
+.active {
+  color: orange;
+}
