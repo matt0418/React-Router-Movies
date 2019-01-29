@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link  } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const MovieCard = (props) => {
   return(
     <div>
       <div className="save-wrapper">
-        <Link to={`/movies/${props.movie.id}`}>
+        <NavLink to={`/movies/${props.movie.id}`}>
           <div className="movie-card">
             <h2>{props.movie.title}</h2>
             <div className="movie-director">
@@ -23,7 +23,7 @@ const MovieCard = (props) => {
               </div>
             ))}
           </div>
-        </Link>
+        </NavLink>
       </div>
     </div>
   )
